@@ -1,3 +1,9 @@
+Fork of  keebio/iris-case
+added files I used to order alumnium plates at geerscutting.com
+I converted the files to metric dxf files (quite a few European services only support metric files) and created mirrored files because I ordered plates with foil on one side (highly recommended).
+
+
+
 Iris Keyboard Case
 ==================
 
