@@ -22,7 +22,7 @@ Fabrication
 
 Steps:
 - Upload file
-- Scale the object correctly, the dimensions of the plates are 153.7mm x 133.9mm
+- Scale the object correctly, the dimensions of the plates are 153.7mm x 133.9mm. The dimensions of the middle layers is 153.7mm x 132.5mm.
 - Make sure all colors are set to "Cut" and not any of the engraving choices
 - Select your material and order
 
