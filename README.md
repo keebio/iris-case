@@ -22,7 +22,11 @@ Fabrication
 
 Steps:
 - Upload file
-- Scale the object correctly, the dimensions of the plates are 153.7mm x 133.9mm. The dimensions of the middle layers is 153.7mm x 132.5mm.
+- Scale the object correctly, the dimensions of the various layers are as follows:
+    - Exterior screw top/bottom plates: 153.7mm x 133.9mm
+    - Middle layer (non-tented) is 153.7mm x 132.5mm
+    - Middle layer (tented) is 167.2mm x 132.5mm
+    - Interior screw top/bottom plates: 144.45mm x 123.0mm
 - Make sure all colors are set to "Cut" and not any of the engraving choices
 - Select your material and order
 
