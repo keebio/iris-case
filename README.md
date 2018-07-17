@@ -1,3 +1,9 @@
+Fork of  keebio/iris-case
+added files I used to order alumnium plates at geerscutting.com
+I converted the files to metric dxf files (quite a few European services only support metric files) and created mirrored files because I ordered plates with foil on one side (highly recommended).
+
+
+
 Iris Keyboard Case
 ==================
 
@@ -9,6 +15,9 @@ Case pieces
 - Switch layer (`iris-switch-plate.ai`)
 - Bottom layer (`iris-bottom-plate.ai`)
 - Middle layer (`iris-middle-layer.ai`)
+
+The same files are also available as dxf files, using imperial units or alternatively in  metric units (for european online cutting services). 
+
 
 Screws and Standoffs
 --------------------
