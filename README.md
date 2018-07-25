@@ -10,6 +10,9 @@ Case pieces
 - Bottom layer (`iris-bottom-plate.ai`)
 - Middle layer (`iris-middle-layer.ai`)
 
+### Note on middle layer compatibility 
+Middle layers (both regular and tented) are compatible with the top and bottom cases with external screws only.
+
 Screws and Standoffs
 --------------------
 This case was designed to use M2 screws and standoffs. The holes in the middle layers are for the standoffs, while the holes in the top and bottom layers are only wide enough for the screws. M2 screws and standoffs that fit the case can be purchased at Keebio: [M2 Screws & Standoffs](https://keeb.io/products/m2-screws-and-standoffs)
