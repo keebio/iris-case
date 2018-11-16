@@ -1,7 +1,8 @@
 3D Print Iris Keyboard Case 
 ===========================
 
-This is the source code for a 3D printable case for the [Iris keyboard](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard). 
+This is the source code for a 3D printable case for the [Iris keyboard](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard).
+![Alt text](/3d-print-case/readme-images/case-exploded.png?raw=true "Iris case (exploded)")
 
 The 3D print case supports many different combinations of options, and including generated files for all of them would bloat the size of this repository. Because of this, the source file and instructions for generating the STLs are provided in this document.
 
