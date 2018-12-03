@@ -55,6 +55,12 @@ If you're having the middle layers made, from the top of the switch plate to the
         - 2x4.5mm layers
         - or 3x3mm layers
 
+STL Files for 3D printing
+-------------------------
+A couple of STL files have also been included for the middle layers and are both single pieces.
+
+One version allows the Ergodox EZ legs to be used with it. In addition to the legs, you'll need M3 nuts to allow the legs screws to screw into.
+
 License
 -------
 These case files are released under the MIT License.
