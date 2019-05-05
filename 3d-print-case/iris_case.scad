@@ -2,12 +2,11 @@
 // User configurable options
 ////////////////////////////
 
-two_unit_thumb = 1;
-stabilizers = 1;
+two_unit_thumb = false;
+stabilizers = true;
+usb_c_pro_micro = true;
 trrs_diameter = 6.55;
-selector = 0;
-
-
+selector = 1;
 
 ///////////////////////////////
 // Source code below this point
@@ -35,8 +34,10 @@ col6Shift = _3_32nds;
 
 screw_head_diameter = 6.75;
 
-usb_port_width = 7.5;
-usb_port_height = 2.5;
+mini_usb_port_width = 7.5;
+usb_c_port_width = 9;
+
+usb_port_height = usb_c_pro_micro == true ? 3.2 : 2.5;
 left_usb_z_position = height - mx_switch_height - pcb_height - usb_port_height/2;
 right_usb_z_position = plate_thickness + usb_port_height/2;
 
@@ -46,23 +47,23 @@ trrs_left_offset = 13.32 + trrs_jack_size/2;
 left = 1;
 right = 2;
 
-drawCase();
-
 TOP_LEFT = 1;
 BOTTOM_LEFT = 2;
 TOP_RIGHT = 3;
 BOTTOM_RIGHT = 4;
+LEFT = 5;
+RIGHT = 6;
 
 module drawCase() {
-    if(selector == TOP_LEFT) top(left);
-    if(selector == BOTTOM_LEFT) bottom(left);
-    if(selector == TOP_RIGHT) top(right);
-    if(selector == BOTTOM_RIGHT) bottom(right);
+    if(selector == TOP_LEFT || selector == LEFT) top(left);
+    if(selector == BOTTOM_LEFT || selector == LEFT) bottom(left);
+    if(selector == TOP_RIGHT || selector == RIGHT) top(right);
+    if(selector == BOTTOM_RIGHT || selector == RIGHT) bottom(right);
 }
 
 module pcb_fit_test() {
     pro_micro_width = 17.5;
-    case_skirt(wall_thickness, 0);
+    case_skirt(wall_thickness, 0, wall_thickness/2);
     translate([47.5, 69, 0]){
         linear_extrude(pcb_height) {
             rotate(90) {
@@ -73,17 +74,16 @@ module pcb_fit_test() {
     translate([-col4Shift - _3_32nds - 2.2, -pro_micro_width/2 + 3.5 * key_distance, pcb_height]) {
         cube([10, pro_micro_width, pcb_height]);
     }
-    translate([-col4Shift - _3_32nds - 3.2, -usb_port_width/2 + 3.5 * key_distance, pcb_height]) {
-        cube([10, usb_port_width, usb_port_height]);
+    translate([-col4Shift - _3_32nds - 3.2, -mini_usb_port_width/2 + 3.5 * key_distance, pcb_height]) {
+        cube([10, mini_usb_port_width, usb_port_height]);
     }
 }
 
 module usb_cutout(selector) {
     cutout_adjust = 0.1;
-    width_top = usb_port_width + cutout_adjust;
+    width_top = mini_usb_port_width + cutout_adjust;
     width_bottom = 4.85 + cutout_adjust;
     port_height = usb_port_height + cutout_adjust;
-    radius = 0.5;
     angle = selector == left ? 90 : 270;
     promicro_extension = 2;
     z_position = selector == left ? left_usb_z_position : right_usb_z_position;
@@ -91,9 +91,16 @@ module usb_cutout(selector) {
     translate([-col4Shift - _3_32nds - promicro_extension, 3.5 * key_distance, z_position]) {
         rotate([0, angle, 0]) {
             hull () {
-                usb_cutout_cylinders(-port_height/2 + radius, width_top, radius);
-                usb_cutout_cylinders(0, width_top, radius);
-                usb_cutout_cylinders(port_height/2 - radius, width_bottom, radius);
+                if (usb_c_pro_micro) {
+                    radius = 1;
+                    usb_cutout_cylinders(-port_height/2 + radius, usb_c_port_width + cutout_adjust, radius);
+                    usb_cutout_cylinders(port_height/2 - radius, usb_c_port_width + cutout_adjust, radius);
+                } else {
+                    radius = 0.5;
+                    usb_cutout_cylinders(-port_height/2 + radius, width_top, radius);
+                    usb_cutout_cylinders(0, width_top, radius);
+                    usb_cutout_cylinders(port_height/2 - radius, width_bottom, radius);
+                }
             }
         }
     }
@@ -110,8 +117,8 @@ module usb_cutout_cylinders(x, y, radius) {
 
 module usb_spacer(selector) {
     spacer_height = 5;
-    spacer_margin = 4;
-    spacer_width = usb_port_width + spacer_margin;
+    spacer_margin = 5;
+    spacer_width = usb_c_pro_micro == 1 ? usb_c_port_width + spacer_margin : mini_usb_port_width + spacer_margin;
     z_position = selector == left ? -spacer_height + left_usb_z_position : right_usb_z_position;
 
     translate([-key_distance, 3.5 * key_distance - spacer_width/2, z_position]) {
@@ -143,8 +150,8 @@ module top(selector) {
                                     translate([-150, -150, -height + trrs_jack_size/2 + plate_thickness]) {
                                         cube([300, 300, height]);
                                     }
-                                    translate([0, 0, trrs_jack_size/2 + plate_thickness - 0.001]) {         
-                                        case_skirt(wall_thickness/2, -0.001);
+                                    translate([0, 0, trrs_jack_size/2 + plate_thickness -0.001]) {         
+                                        case_skirt(wall_thickness/2, -0.001, wall_thickness/2 + 0.1);
                                     }
                                 }
                                 if (selector == right) {
@@ -193,7 +200,7 @@ module bottom(selector) {
                                     cube([300, 300, height]);
                                 }
                                 translate([0, 0, trrs_jack_size/2 + plate_thickness + 0.001]) {     
-                                    case_skirt(wall_thickness + 0.001, wall_thickness/2);
+                                    case_skirt(wall_thickness + 0.001, wall_thickness/2 -0.05, wall_thickness/2);
                                 }
                             }
                             if (selector == left) { 
@@ -227,7 +234,8 @@ module bottom(selector) {
                     usb_spacer(right);
                     usb_cutout(right);
                 }
-                trrs_space_width = trrs_jack_size + 1;
+                // Add a small indent in bottom place for the TRRS jack
+                trrs_space_width = 6.5;
                 translate([0, 0, -trrs_jack_size/2 + 2.00]){
                     position_trrs(trrs_position - trrs_space_width/2, -19.8){
                         cube([plate_thickness + 1, trrs_space_width, 13]);
@@ -239,7 +247,7 @@ module bottom(selector) {
 }
 
 module trrs_cutout(dist_from_thumb) {
-    trrs_cutout_radius = 2.55;
+    trrs_cutout_radius = 2.6;
     position_trrs(dist_from_thumb, -23) {
         cylinder(r=trrs_cutout_radius, h=10, center=true);
     }
@@ -378,15 +386,15 @@ module stabilizer_cutout(x) {
     }
 }
 
-module case_skirt(outer_offset, inner_offset) {
+module case_skirt(outer_offset, inner_offset, height) {
     difference() {
-        linear_extrude(height = wall_thickness/2) {
+        linear_extrude(height) {
             projection() {
                 case_base(outer_offset);
             }
         }
         translate([0, 0, -0.001]) {
-            linear_extrude(height = wall_thickness/2 + 0.002) {
+            linear_extrude(height + 0.002) {
                 projection() {
                     case_base(inner_offset);
                 }

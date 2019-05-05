@@ -17,6 +17,7 @@ This case does not support all configuration options for the Iris. If you would 
 - PCB mount stabilizers (both clip and screw-in)
 - TRRS cables < 10mm in diameter (6.5mm recommended)
 - Micro USB pro-micro
+- Elite-C controller
 
 ### Unsupported
 - Alps switches
@@ -24,7 +25,6 @@ This case does not support all configuration options for the Iris. If you would 
 - DIP sockets
 - Plate-mount stabilizers
 - Threaded screw inserts
-- Elite-C controller *(Support planned)*
 
 How to generate STL files from this project
 -------------------------------------------
@@ -61,6 +61,8 @@ smaller sized cable is the recommended solution.
     - If `2`, bottom left
     - If `3`, top right
     - If `4`, bottom right
+    - If `5`, Top and bottom left hand
+    - If `6`, Top and bottom right hand
 
 Case assembly
 -------------
