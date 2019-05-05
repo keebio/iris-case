@@ -42,12 +42,15 @@ How to generate STL files from this project
 
 ### User configurable options
 - **two_unit_thumb**
-    - If `0`, two 1u switch cutouts are generated on the diagonal thumb section
-    - If `1`, a single centered cutout for a 2u thumb key is generated
+    - If `false`, two 1u switch cutouts are generated on the diagonal thumb section
+    - If `true`, a single centered cutout for a 2u thumb key is generated
 - **stabilizers**
     - `stabilizers` only has an effect when using a 2u thumb key
-    - If `0`, PCB stabilizer cutouts are not generated
-    - If `1`, stabilizer cutous are generated for the 2u thumb key
+    - If `false`, PCB stabilizer cutouts are not generated
+    - If `true`, stabilizer cutous are generated for the 2u thumb key
+- **usb_c_pro_micro**
+    - If `false`, USB cutout is shaped for micro-USB
+    - If `true`, USB cutout is shaped for USB-C
 - **trrs_diameter**
     - The way the Iris PCB is designed, the left-side TRRS cable is extremely 
 close to the edge of the PCB. Since the case must be wider than the PCB, 
