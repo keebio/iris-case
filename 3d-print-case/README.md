@@ -11,6 +11,7 @@ What's supported
 This case does not support all configuration options for the Iris. If you would like to add any of the missing features, the source code for the case is available in this repo. Please contribute your changes back once they are tested.
 
 ### Supported
+- Iris 2.7 and earlier PCB
 - MX compatible switches
 - 1u thumb keys 
 - 2u thumb keys
@@ -20,6 +21,7 @@ This case does not support all configuration options for the Iris. If you would 
 - Elite-C controller
 
 ### Unsupported
+- Iris 3.0 PCB
 - Alps switches
 - Low profile switches
 - DIP sockets
