@@ -1,6 +1,8 @@
 Iris Keyboard Case
 ==================
 
+**NOTE: This repository is undergoing a bit of reorganization due to the addition of Iris Rev. 3 pieces, so some of the descriptions might not be accurate. Iris R3 mid layer single pieces are only compatible with the 1.5mm plates at the moment, design for 3mm acrylic plate is in progress.**
+
 Here's case design files for the [Iris](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard). It's a sandwich-style case with cutouts to accomodate the USB jack and the TRRS jack.
 
 Case pieces
