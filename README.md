@@ -1,19 +1,34 @@
 Iris Keyboard Case
 ==================
 
-**NOTE: This repository is undergoing a bit of reorganization due to the addition of Iris Rev. 3 pieces, so some of the descriptions might not be accurate. Iris R3 mid layer single pieces are only compatible with the 1.5mm plates at the moment, design for 3mm acrylic plate is in progress.**
-
 Here's case design files for the [Iris](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard). It's a sandwich-style case with cutouts to accomodate the USB jack and the TRRS jack.
 
 Case pieces
 -----------
+The Iris sandwich case consists these pieces:
 
-- Switch layer (`iris-switch-plate.ai`)
-- Bottom layer (`iris-bottom-plate.ai`)
-- Middle layer (`iris-middle-layer.ai`)
+- Switch plate (Required)
+- Bottom plate (Required)
+- Middle layer (Optional)
+- Top rim or Top shell (Optional)
 
-### Note on middle layer compatibility 
-Middle layers (both regular and tented) are compatible with the top and bottom cases with external screws only.
+### Compatibility info for Rev. 2 and Rev. 3
+The following pieces are the same for Rev. 2 and 3 and have been placed in the top-level directory:
+
+- Switch plate
+- Top rim
+- Top shell
+
+The following pieces are different between revisions and have their on directories ([rev2-only](rev2-only/) and [rev3-only](rev3-only/)):
+- Middle layer
+- Bottom plate
+
+### Additional notes
+Some of the files only have a left half, just mirror the file to produce a right half if needed.
+
+Design info
+-----------
+A lot of these files have been derived from the following file: [iris-plate-design-rev2-and-rev3.ai](iris-plate-design-rev2-and-rev3.ai). By toggling various layers in that file, you can see various info on switch cutouts, screw holes, inner/outer edges, etc.
 
 Screws and Standoffs
 --------------------
@@ -62,6 +77,10 @@ STL Files for 3D printing
 A couple of STL files have also been included for the middle layers and are both single pieces.
 
 One version allows the Ergodox EZ legs to be used with it. In addition to the legs, you'll need M3 nuts to allow the legs screws to screw into.
+
+Community-Made Files
+--------------------
+Files not designed by Keebio are placed into the [community-made](community-made/) folder and also includes links to other designs not hosted in this repository.
 
 License
 -------
