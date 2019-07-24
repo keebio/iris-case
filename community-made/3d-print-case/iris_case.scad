@@ -515,3 +515,4 @@ module rounded_cylinder(height, diameter, surface_diameter, fa = $fa) {
         }
     }
 }
+drawCase();
