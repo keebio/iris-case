@@ -12,12 +12,14 @@ The Iris sandwich case consists these pieces:
 - Middle layer (Optional)
 - Top rim or Top shell (Optional)
 
-### Compatibility info for Rev. 2 and Rev. 3
-The following pieces are the same for Rev. 2 and 3 and have been placed in the top-level directory:
+### Compatibility info for Rev. 2 and Rev. 3/4
+The following pieces are the same for Rev. 2 and 3/4 and have been placed in the top-level directory:
 
 - Switch plate
 - Top rim
 - Top shell
+
+Rev. 3 and Rev. 4 use the same parts, as they both have the same dimensions.
 
 The following pieces are different between revisions and have their on directories ([rev2-only](rev2-only/) and [rev3-only](rev3-only/)):
 - Middle layer
