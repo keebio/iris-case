@@ -46,9 +46,11 @@ Steps:
 - Upload file
 - Scale the object correctly, the dimensions of the various layers are as follows:
     - Exterior screw top/bottom plates: 153.7mm x 133.9mm
+        - use for templates in /keebio/iris-case/
     - Middle layer (non-tented) is 153.7mm x 132.5mm
     - Middle layer (tented) is 167.2mm x 132.5mm
     - Interior screw top/bottom plates: 144.45mm x 123.0mm
+        - use for templates in /older-designs/interior-plates
 - Make sure all colors are set to "Cut" and not any of the engraving choices
 - Select your material and order
 
