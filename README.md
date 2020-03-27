@@ -21,7 +21,7 @@ The following pieces are the same for Rev. 2 and 3/4 and have been placed in the
 
 Rev. 3 and Rev. 4 use the same parts, as they both have the same dimensions.
 
-The following pieces are different between revisions and have their on directories ([rev2-only](rev2-only/) and [rev3-only](rev3-only/)):
+The following pieces are different between revisions and have their on directories ([rev2-only](rev2-only/) and [rev3-and-rev4](rev3-and-rev4/)):
 - Middle layer
 - Bottom plate
 
