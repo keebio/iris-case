@@ -78,7 +78,7 @@ If you're having the middle layers made, from the top of the switch plate to the
 
 STL Files for 3D printing
 -------------------------
-A couple of STL files have also been included for the middle layers and are both single pieces.
+A couple of STL files have also been included for the middle layers and are both single pieces. They are designed for the left half, so to get the right half, you will need to flip them within your slicer software.
 
 One version allows the Ergodox EZ legs to be used with it. In addition to the legs, you'll need M3 nuts to allow the legs screws to screw into.
 
