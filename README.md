@@ -25,6 +25,8 @@ The following pieces are different between revisions and have their on directori
 - Middle layer
 - Bottom plate
 
+See additional info about Rev. 3 & 4 files in its [README](rev3-and-rev4/README.md).
+
 ### Additional notes
 Some of the files only have a left half, just mirror the file to produce a right half if needed.
 
