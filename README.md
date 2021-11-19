@@ -27,12 +27,25 @@ The following pieces are different between revisions and have their on directori
 
 See additional info about Rev. 3 & 4 files in its [README](rev3-and-rev4/README.md).
 
-### Additional notes
+Iris PE (Phoenix Edition) Parts
+-------------------------------
+
+With the release of Rev. 5 and 6 PCBs, the screw holes need to be relocated to accomodate the wider USB-C port used for interconnect. This means that these parts are not compatible with the older Iris parts (now called Legacy Edition (LE)).
+
+### 3D-print STL files
+
+For the 3D-print STL files, there are two sets of files, ones for the top shell, and ones for the middle layer. For each of these sets, there are different files based on how thick your plates are. If you have the FR4 plates or Stainless steel plates, then use the files for 1.5mm plate. If you are using 3mm acrylic plates, then use the files for the 3mm plate.
+
+For the middle layer files for 1.5mm plates, there are two sets of files: one with a lip and one without a lip. The "lip" refers to the portion of the middle layer that extends past the standoffs and covers the sides of the 1.5mm plate, to hide the edges from view. The "No Lip" version may be more desirable for you to use if you are not using a top shell.
+
+Additional notes
+----------------
+
 Some of the files only have a left half, just mirror the file to produce a right half if needed.
 
 Design info
 -----------
-A lot of these files have been derived from the following file: [iris-plate-design-rev2-and-rev3.ai](iris-plate-design-rev2-and-rev3.ai). By toggling various layers in that file, you can see various info on switch cutouts, screw holes, inner/outer edges, etc.
+A lot of these files have been derived from the following file: [iris-plate-design.ai](iris-plate-design.ai). By toggling various layers in that file, you can see various info on switch cutouts, screw holes, inner/outer edges, etc.
 
 Screws and Standoffs
 --------------------
