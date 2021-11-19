@@ -5,6 +5,7 @@ Here's case design files for the [Iris](https://keeb.io/products/iris-keyboard-s
 
 Case pieces
 -----------
+
 The Iris sandwich case consists these pieces:
 
 - Switch plate (Required)
@@ -12,31 +13,29 @@ The Iris sandwich case consists these pieces:
 - Middle layer (Optional)
 - Top rim or Top shell (Optional)
 
-### Compatibility info for Rev. 2 and Rev. 3/4
-The following pieces are the same for Rev. 2 and 3/4 and have been placed in the top-level directory:
+### Case/Plate Versions
 
-- Switch plate
-- Top rim
-- Top shell
+Before the release of the Iris Rev. 5 PCBs, the case parts for Rev. 3 & 4 used the same parts. However, with the release of Rev. 5 and 6 PCBs, the screw holes needed to be relocated to accomodate the wider USB-C port used for interconnect. Therefore, new case parts needed to be made to support the newer PCBs.
 
-Rev. 3 and Rev. 4 use the same parts, as they both have the same dimensions.
+The newer case parts are called [Phoenix Edition (PE)](phoenix-edition-PE/), while the older Iris parts are now called [Legacy Edition (LE)](legacy-edition-LE).
 
-The following pieces are different between revisions and have their on directories ([rev2-only](rev2-only/) and [rev3-and-rev4](rev3-and-rev4/)):
-- Middle layer
-- Bottom plate
+Phoenix Edition parts and Legacy Edition parts are not compatible with each other due to the different placement of screw holes.
 
-See additional info about Rev. 3 & 4 files in its [README](rev3-and-rev4/README.md).
+PE parts are compatible with Rev. 3 through 6 PCBs.
+
+LE parts are compatible with Rev. 3 & 4 PCBs.
+
+See additional info about Legacy Edition files in its [README](legacy-edition-LE/README.md).
 
 Iris PE (Phoenix Edition) Parts
 -------------------------------
-
-With the release of Rev. 5 and 6 PCBs, the screw holes need to be relocated to accomodate the wider USB-C port used for interconnect. This means that these parts are not compatible with the older Iris parts (now called Legacy Edition (LE)).
-
 ### 3D-print STL files
 
 For the 3D-print STL files, there are two sets of files, ones for the top shell, and ones for the middle layer. For each of these sets, there are different files based on how thick your plates are. If you have the FR4 plates or Stainless steel plates, then use the files for 1.5mm plate. If you are using 3mm acrylic plates, then use the files for the 3mm plate.
 
 For the middle layer files for 1.5mm plates, there are two sets of files: one with a lip and one without a lip. The "lip" refers to the portion of the middle layer that extends past the standoffs and covers the sides of the 1.5mm plate, to hide the edges from view. The "No Lip" version may be more desirable for you to use if you are not using a top shell.
+
+If you are using the top shells, you will need to use longer M2 screws, as the top shell has been designed to be threaded into directly from underneath. For 1.5mm plates, you will need [18mm screws](https://keeb.io/products/m2-screws-and-standoffs), and for 3mm plates, you will need 22mm screws.
 
 Additional notes
 ----------------
@@ -45,34 +44,21 @@ Some of the files only have a left half, just mirror the file to produce a right
 
 Design info
 -----------
-A lot of these files have been derived from the following file: [iris-plate-design.ai](iris-plate-design.ai). By toggling various layers in that file, you can see various info on switch cutouts, screw holes, inner/outer edges, etc.
+
+A lot of these files have been derived from the following file: [iris-plate-design.ai](references/iris-plate-design.ai). By toggling various layers in that file, you can see various info on switch cutouts, screw holes, inner/outer edges, etc.
 
 Screws and Standoffs
 --------------------
+
 This case was designed to use M2 screws and standoffs. The holes in the middle layers are for the standoffs, while the holes in the top and bottom layers are only wide enough for the screws. M2 screws and standoffs that fit the case can be purchased at Keebio: [M2 Screws & Standoffs](https://keeb.io/products/m2-screws-and-standoffs)
 
 Fabrication of Acrylic Parts
 ----------------------------
 
-### Sculpteo
-[Sculpteo](https://www.sculpteo.com) offers laser cutting services and is relatively easy to use.
+### Places to go
 
-Steps:
-- Upload file
-- Scale the object correctly, the dimensions of the various layers are as follows:
-    - Exterior screw top/bottom plates: 153.7mm x 133.9mm
-        - use for templates in /keebio/iris-case/
-- Make sure all colors are set to "Cut" and not any of the engraving choices
-- Select your material and order
-
-### Ponoko
-To have the case made with Ponoko, you can't take these files as is and send them off to them. First, you'll need to download the templates for P1, P2, & P3 sheets from here, depending on what vector editor you are using:
-
-- [Inkscape templates](https://www.ponoko.com/starter-kits/inkscape)
-- [Adobe Illustrator template](https://www.ponoko.com/starter-kits/adobe-illustrator)
-- [Other](https://www.ponoko.com/make-and-sell/design-it-yourself)
-
-Next, open up the template of the sheet size you want and open up the case design files as well. Then, copy the drawings in the case design files into the template. Remove any overlapping lines to reduce the cutting cost using this guide: [Avoid doubled up lines](http://support.ponoko.com/hc/en-us/articles/220289608-Avoid-doubled-up-blue-cutting-lines-in-your-designs).
+- [Sculpteo](https://www.sculpteo.com)
+- [Ponoko](https://www.ponoko.com)
 
 ### Middle Layer Thickness
 If you're having the middle layers made, from the top of the switch plate to the top of the bottom plate, the minimum distance between the two required is 12mm if the plastic on the header pins is removed. The requirement is slightly more (about 13.5mm) if you leave the plastic on. Therefore, the following middle layer thickness are needed based on the thickness of the switch layer:

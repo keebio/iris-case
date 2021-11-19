@@ -1,5 +1,5 @@
-Iris Rev. 3 & 4 Files
-=====================
+Iris Rev. 3 & 4 Files (Legacy Edition)
+======================================
 
 Iris Rev. 3 and 4 PCBs have the same exact USB-C and TRRS port positioning, so they also use the same case design.
 
