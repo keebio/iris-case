@@ -37,6 +37,8 @@ For the middle layer files for 1.5mm plates, there are two sets of files: one wi
 
 If you are using the top shells, you will need to use longer M2 screws, as the top shell has been designed to be threaded into directly from underneath. For 1.5mm plates, you will need [18mm screws](https://keeb.io/products/m2-screws-and-standoffs), and for 3mm plates, you will need 22mm screws.
 
+If you choose to print the ErgoDox-style tenting legs, you will need six M3 screws (at least 16mm) and six M3 nuts. The legs and washers are best printed at 0.16mm quality or better.
+
 Additional notes
 ----------------
 
