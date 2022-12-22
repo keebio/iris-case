@@ -15,13 +15,13 @@ The Iris sandwich case consists these pieces:
 
 ### Case/Plate Versions
 
-Before the release of the Iris Rev. 5 PCBs, the case parts for Rev. 3 & 4 used the same parts. However, with the release of Rev. 5 and 6 PCBs, the screw holes needed to be relocated to accomodate the wider USB-C port used for interconnect. Therefore, new case parts needed to be made to support the newer PCBs.
+Before the release of the Iris Rev. 5 PCBs, the case parts for Rev. 3 & 4 used the same parts. However, with the release of Rev. 5-7 PCBs, the screw holes needed to be relocated to accomodate the wider USB-C port used for interconnect. Therefore, new case parts needed to be made to support the newer PCBs.
 
 The newer case parts are called [Phoenix Edition (PE)](phoenix-edition-PE/), while the older Iris parts are now called [Legacy Edition (LE)](legacy-edition-LE).
 
 Phoenix Edition parts and Legacy Edition parts are not compatible with each other due to the different placement of screw holes.
 
-PE parts are compatible with Rev. 3 through 6 PCBs.
+PE parts are compatible with Rev. 3 through 7 PCBs.
 
 LE parts are compatible with Rev. 3 & 4 PCBs.
 
