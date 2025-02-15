@@ -1,3 +1,9 @@
+Fork of  keebio/iris-case
+added files I used to order alumnium plates at geerscutting.com
+I converted the files to metric dxf files (quite a few European services only support metric files) and created mirrored files because I ordered plates with foil on one side (highly recommended).
+
+
+
 Iris Keyboard Case
 ==================
 
@@ -57,6 +63,9 @@ Design info
 -----------
 
 A lot of these files have been derived from the following file: [iris-plate-design.ai](references/iris-plate-design.ai). By toggling various layers in that file, you can see various info on switch cutouts, screw holes, inner/outer edges, etc.
+
+The same files are also available as dxf files, using imperial units or alternatively in  metric units (for european online cutting services). 
+
 
 Screws and Standoffs
 --------------------
