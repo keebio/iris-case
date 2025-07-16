@@ -4,13 +4,15 @@ Iris Keyboard Case
 Here's case design files for the [Iris](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard). It's a sandwich-style case with cutouts to accommodate the USB jack and the TRRS jack.
 
 
-## Iris CE / Iris LM / Iris AE
+## Iris CE / Iris LM / Iris AE / Iris SE
 
 Iris CE parts are in this repository: https://github.com/keebio/iris-ce-case
 
 Iris LM parts are in this repository: https://github.com/keebio/iris-lm-case
 
 Iris AE parts are in this repository: https://github.com/keebio/iris-ae-case
+
+Iris SE parts will be made available shortly.
 
 Case pieces
 -----------
