@@ -1,7 +1,7 @@
 Iris Keyboard Case
 ==================
 
-Here's case design files for the [Iris](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard). It's a sandwich-style case with cutouts to accommodate the USB jack and the TRRS jack.
+Here are the case design files for the [Iris](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard). It's a sandwich-style case with cutouts to accommodate the USB jack and the TRRS jack.
 
 
 ## Iris CE / Iris LM / Iris AE / Iris SE
@@ -12,12 +12,12 @@ Iris LM parts are in this repository: https://github.com/keebio/iris-lm-case
 
 Iris AE parts are in this repository: https://github.com/keebio/iris-ae-case
 
-Iris SE parts will be made available shortly.
+Iris SE parts are in this repository: https://github.com/keebio/iris-se-case
 
 Case pieces
 -----------
 
-The Iris sandwich case consists these pieces:
+The Iris sandwich case consists of these pieces:
 
 - Switch plate (Required)
 - Bottom plate (Required)
@@ -74,7 +74,7 @@ Fabrication of Acrylic Parts
 - [Ponoko](https://www.ponoko.com)
 
 ### Middle Layer Thickness
-If you're having the middle layers made, from the top of the switch plate to the top of the bottom plate, the minimum distance between the two required is 12mm if the plastic on the header pins is removed. The requirement is slightly more (about 13.5mm) if you leave the plastic on. Therefore, the following middle layer thickness are needed based on the thickness of the switch layer:
+If you're having the middle layers made, from the top of the switch plate to the top of the bottom plate, the minimum distance between the two required is 12mm if the plastic on the header pins is removed. The requirement is slightly more (about 13.5mm) if you leave the plastic on. Therefore, the following middle layer thicknesses are needed based on the thickness of the switch layer:
 
 - 1.5mm Stainless steel switch plate: 10.5mm
     - Usually accomplished with:
@@ -90,11 +90,11 @@ STL Files for 3D printing
 -------------------------
 A couple of STL files have also been included for the middle layers and are both single pieces. They are designed for the left half, so to get the right half, you will need to flip them within your slicer software.
 
-One version allows the Ergodox EZ legs to be used with it. In addition to the legs, you'll need M3 nuts to allow the legs screws to screw into.
+One version allows the Ergodox EZ legs to be used with it. In addition to the legs, you'll need M3 nuts to allow the leg screws to screw into.
 
 Community-Made Files
 --------------------
-Files not designed by Keebio are placed into the [community-made](community-made/) folder and also includes links to other designs not hosted in this repository.
+Files not designed by Keebio are placed into the [community-made](community-made/) folder and also include links to other designs not hosted in this repository.
 
 License
 -------
